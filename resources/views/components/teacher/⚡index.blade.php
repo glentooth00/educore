@@ -7,7 +7,46 @@ new class extends Component
     //
 };
 ?>
-
 <div>
-    {{-- Act only according to that maxim whereby you can, at the same time, will that it should become a universal law. - Immanuel Kant --}}
+    <flux:heading size="xl">Teacher</flux:heading>
+    <flux:text class="mt-1 mb-2">Manage Teachers.</flux:text>
+    
+    <flux:separator class="mb-4" />
+
+    
+
+    <flux:table>
+        <flux:table.columns>
+            <flux:table.column>
+                TEST
+            </flux:table.column>
+            <flux:table.column>
+                TEST
+            </flux:table.column>
+            <flux:table.column>
+                TEST
+            </flux:table.column>
+            <flux:table.column>
+                TEST
+            </flux:table.column>
+        </flux:table.columns>
+
+
+        <flux:table.rows>
+            <flux:table.row>
+                <flux:table.cell>
+                    Table data
+                </flux:table.cell>
+                 <flux:table.cell>
+                    Table data
+                </flux:table.cell>
+                 <flux:table.cell>
+                    Table data
+                </flux:table.cell>
+                 <flux:table.cell>
+                    Table data
+                </flux:table.cell>
+            </flux:table.row>
+        </flux:table.rows>
+    </flux:table>
 </div>
