@@ -14,7 +14,13 @@ new class extends Component
     <flux:separator class="mb-4" />
 
     <flux:modal.trigger name="edit-profile" >
-        <flux:button class="mb-4 cursor-pointer" variant="primary" color="blue" icon="user-plus ">Add Teacher</flux:button>
+        <flux:button 
+            class="mb-4 cursor-pointer" 
+            variant="primary" 
+            color="blue" 
+            icon="user-plus"
+            href="{{ route('teacher.create') }}"
+            >Add Teacher</flux:button>
     </flux:modal.trigger>
 
     <flux:table>
@@ -53,19 +59,4 @@ new class extends Component
     </flux:table>
 
 
-
-    <flux:modal name="edit-profile" class="md:w-96">
-        <div class="space-y-6">
-            <div>
-                <flux:heading size="lg">Update profile</flux:heading>
-                <flux:text class="mt-2">Make changes to your personal details.</flux:text>
-            </div>
-            <flux:input label="Name" placeholder="Your name" />
-            <flux:input label="Date of birth" type="date" />
-            <div class="flex">
-                <flux:spacer />
-                <flux:button type="submit" variant="primary" class="cursor-pointer">Save changes</flux:button>
-            </div>
-        </div>
-    </flux:modal>
 </div>
